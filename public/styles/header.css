@@ -10,3 +10,23 @@
   background-image: url('../images/binding-dark.png');
   order: 2;
 }
+
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #edede8;
+    background-image: url('../images/binding-dark.png');
+    order: 2;
+    max-width: 20%;
+    min-width: 33vw;
+  }
+
+}

@@ -20,8 +20,6 @@ body {
   font-size: 24px;
 }
 
-
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -51,4 +49,28 @@ body {
 
 .shadowed {
   text-shadow: 3px 3px #254441;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+
+  body {
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    background-color: #f4f1ec;
+    padding: 0em 1em 1em 1em;
+    margin-left: 30px;
+    order: 3;
+  }
+
 }

@@ -81,3 +81,13 @@
     opacity: 0;
   }
 }
+
+
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+
+  .new-tweet.panel-hidden {
+    display: flex;
+  }
+
+}
