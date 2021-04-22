@@ -1,7 +1,8 @@
+@use 'theme';
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -9,17 +10,19 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
-  color: #254441;
-  background-color: #f6f6f3;
+  color: theme.$green1;
+  background-color: theme.$offwhite1;
   font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: theme.$fontContent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 90vw;
-  background-color: #f6f6f3;
+  background-color: theme.$offwhite1;
   padding: 1em;
   order: 3;
 }
@@ -41,11 +44,12 @@ body {
 }
 
 .shadowed {
-  text-shadow: 3px 3px #254441;
+  text-shadow: 3px 3px theme.$green1;
 }
 
 @media only screen and (min-width: 1024px) {
   /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+
   body {
     display: flex;
     flex-direction: row;
@@ -59,9 +63,10 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 60vw;
-    background-color: #f6f6f3;
+    background-color: theme.$offwhite1;
     padding: 0em 1em 1em 1em;
     margin-left: 30px;
     order: 3;
   }
+
 }

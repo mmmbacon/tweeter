@@ -1,29 +1,38 @@
+@use 'theme';
+
+@mixin align($property){
+  justify-content: $property;
+  align-items: $property;
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   height: 500px;
   width: 100vw;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f3;
-  background-image: url("../images/binding-dark.png");
+  @include align(center);
+  background-color: theme.$offwhite1;
+  background-image: url('../images/binding-dark.png');
   order: 2;
 }
 
 @media only screen and (min-width: 1024px) {
   /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  
   .main-header {
     display: flex;
     flex-direction: column;
     height: 450px;
-    justify-content: center;
-    align-items: center;
+    @include align(center);
     margin-left: 20px;
-    background-color: #f6f6f3;
-    background-image: url("../images/binding-dark.png");
+    background-color: theme.$offwhite1;
+    background-image: url('../images/binding-dark.png');
     order: 2;
     max-width: 20%;
     min-width: 33vw;
   }
+
 }
+
+
