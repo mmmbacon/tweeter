@@ -1,0 +1,12 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  height: 500px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #edede8;
+  background-image: url('../images/binding-dark.png');
+  order: 2;
+}

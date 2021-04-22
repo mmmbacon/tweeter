@@ -15,11 +15,40 @@ html {
  */
 
 body {
-  color: #545149;
+  color: #254441;
   background-color: #f4f1ec;
   font-size: 24px;
 }
 
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+
+  background-color: #f4f1ec;
+  padding: 1em;
+  order: 3;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.shadowed {
+  text-shadow: 3px 3px #254441;
+}
