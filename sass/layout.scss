@@ -70,3 +70,26 @@ body {
   }
 
 }
+
+.floating-button {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: theme.$green2;
+  border: none;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  box-shadow: theme.$textShadowSoft;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.floating-button:hover {
+  background-color: theme.$green3;
+}
+
+.floating-button:active {
+  background-color: theme.$green1;
+}

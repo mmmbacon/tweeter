@@ -6,65 +6,72 @@ article.tweet{
   border: theme.$borderThick;
   cursor: pointer;
   background-color: white;
+
+  a.actions {
+    color: theme.$green1;
+    text-decoration: none;
+    font-size: 0.75em;
+    padding-left: 5px;
+  }
+  
+  a.actions:hover {
+    color: theme.$red2;
+    text-decoration: none;
+    font-size: 0.75em;
+    padding-left: 5px;
+  }
+  
+  content {
+    font-weight: 600;
+    padding: 50px;
+    
+  }
+  
+  .dateposted {
+    font-size: 0.8em;
+  }
+  
+  .user-icon {
+    padding-right:15px;
+  }
+
+  .small-pic {
+    width: 75px;
+    height: 75px;
+  }
+  
+  sup {
+    padding-left:  2px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: theme.$borderThick;
+    padding-top: 10px;
+    font-size: 0.75em;
+  }
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
 }
 
 article.tweet:hover {
   box-shadow: theme.$shadowBoxy;
 }
-
-article.tweet a.actions {
-  color: theme.$green1;
-  text-decoration: none;
-  font-size: 0.75em;
-  padding-left: 5px;
-}
-
-article.tweet a.actions:hover {
-  color: theme.$red2;
-  text-decoration: none;
-  font-size: 0.75em;
-  padding-left: 5px;
-}
-
-article.tweet content {
-  font-weight: 600;
-  padding: 50px;
-  
-}
-
-article.tweet .dateposted {
-  font-size: 0.8em;
-}
-
-article.tweet .user-icon {
-  padding-right:15px;
-}
-
-article.tweet sup {
-  padding-left:  2px;
-  font-weight: 600;
-}
-
-article.tweet footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-top: theme.$borderThick;
-  padding-top: 10px;
-  font-size: 0.75em;
-}
-
-article.tweet header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-article.tweet .heart {
- color: theme.$red2;
-}
-
-
-
 
 

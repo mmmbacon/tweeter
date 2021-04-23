@@ -65,3 +65,25 @@ body {
     order: 3;
   }
 }
+.floating-button {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #43aa8b;
+  border: none;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.floating-button:hover {
+  background-color: #3a9278;
+}
+
+.floating-button:active {
+  background-color: #254441;
+}

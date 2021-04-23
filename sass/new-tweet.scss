@@ -1,75 +1,77 @@
 @use 'theme';
 
 .new-tweet {
-  display: flex;
+  display: none;
   flex-direction: column;
   font-weight: 600;
   margin-bottom: 20px;
-}
 
-.new-tweet .submission {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-family: theme.$fontHeader;
-  font-size: 0.75em;
-  text-shadow:  theme.$textShadowSoft;
-  margin-top: 10px;
-  padding-top: 20px;
-  border-top: theme.$borderThick;
-}
+  .submission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: theme.$fontHeader;
+    font-size: 0.75em;
+    text-shadow:  theme.$textShadowSoft;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: theme.$borderThick;
+  }
+  
+  .error {
+    color: rgb(162, 0, 0);
+    font-family: theme.$fontContent;
+    font-weight: 300;
+    background-color: rgb(255, 0, 0, 0.1);;
+    padding: 3px 5px 3px 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+    border-radius: 15px;
+    border: 1px solid rgb(162, 0, 0, 0.3);
+    line-height: 1em;
+    height: 27px;
+    opacity: 0;
+  }
+  
+  .panel-hidden {
+    display: none;
+  }
+  
+  button {
+    border: 0px; 
+    padding: 1em;
+    font-family: 'Bungee', cursive;
+    font-size: 0.75em;
+    text-shadow: theme.$textShadowSoft;
+    background-color: theme.$red2;
+    color: white;
+    height: 1.5em;
+    line-height: 0em;
+  }
 
-.new-tweet .error {
-  color: rgb(162, 0, 0);
-  font-family: theme.$fontContent;
-  font-weight: 300;
-  background-color: rgb(255, 0, 0, 0.1);;
-  padding: 3px 5px 3px 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-  flex-grow: 1;
-  border-radius: 15px;
-  border: 1px solid rgb(162, 0, 0, 0.3);
-  line-height: 1em;
-  height: 27px;
-  opacity: 0;
-}
+  button:hover {
+    cursor: pointer;
+    background-color: theme.$red2;
+  }
+  
+  #tweet-text {
+    border: none;
+    background-color: theme.$offwhite1;
+    resize: vertical;
+    height: 1em;
+    width: 100%;
+  }
+  
+  #tweet-text:focus {
+    outline: none;
+  }
 
-.new-tweet.panel-hidden {
-  display: none;
-}
+  .flash {
+    animation: fade 2s ease-in;
+  }
 
-.new-tweet button {
-  border: 0px; 
-  padding: 1em;
-  font-family: 'Bungee', cursive;
-  font-size: 0.75em;
-  text-shadow: theme.$textShadowSoft;
-  background-color: theme.$red2;
-  color: white;
-  height: 1.5em;
-  line-height: 0em;
-}
-.new-tweet button:hover {
-  cursor: pointer;
-  background-color: theme.$red2;
-}
-
-.new-tweet #tweet-text {
-  border: none;
-  background-color: theme.$offwhite1;
-  resize: vertical;
-  height: 1em;
-  width: 100%;
-}
-
-.new-tweet #tweet-text:focus {
-  outline: none;
-}
-
-.flash {
-  animation: fade 2s ease-in;
 }
 
 @keyframes fade {
@@ -86,8 +88,6 @@
 
 
 @media only screen and (min-width: 1024px) {
-  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
-
   .new-tweet.panel-hidden {
     display: flex;
   }

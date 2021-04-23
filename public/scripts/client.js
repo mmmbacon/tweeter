@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
+  //create a new tweet
   $('.new-tweet').find('form').on('submit', function(e) {
 
     e.preventDefault();
 
-    // get all the inputs into an array.
     let $text = $(this).find('textarea').val();
 
     if (!$text) {
@@ -32,6 +32,7 @@ $(document).ready(function() {
     
   });
 
+  //Hide / show the new tweet form
   $('nav #write-new').on('click', function(e) {
     e.preventDefault();
 
@@ -45,6 +46,21 @@ $(document).ready(function() {
     
   });
 
+  $(document).on('scroll', function(e) {
+    if ($(window).scrollTop() > 0) {
+      $('.floating-button').fadeIn();
+    } else {
+      $('.floating-button').fadeOut();
+    }
+    
+  });
+
+  $('.floating-button').on('click', function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+
+  //Format new error message
   const error = function(message) {
     $('.error').text('Error: ' + message);
     $('.error').css({ 'display' : 'flex', 'opacity' : 1});
@@ -73,7 +89,7 @@ $(document).ready(function() {
     let $tweet = $(
       `<article class="tweet">
         <header>
-          <div><i class="far fa-surprise user-icon"></i>${tweet.user.name}</div>
+          <div><img class="small-pic" src="/images/profile-hex.png"></i>${tweet.user.name}</div>
           <div class="handle">${tweet.user.handle}</div>
         </header>
         <content>
@@ -111,6 +127,7 @@ $(document).ready(function() {
       });
   };
 
+  //Load tweets if page is loaded
   loadTweets();
   
 });

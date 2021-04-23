@@ -5,43 +5,37 @@ article.tweet {
   cursor: pointer;
   background-color: white;
 }
-
-article.tweet:hover {
-  box-shadow: 5px 5px #254441;
-}
-
 article.tweet a.actions {
   color: #254441;
   text-decoration: none;
   font-size: 0.75em;
   padding-left: 5px;
 }
-
 article.tweet a.actions:hover {
   color: #ff6f59;
   text-decoration: none;
   font-size: 0.75em;
   padding-left: 5px;
 }
-
 article.tweet content {
   font-weight: 600;
   padding: 50px;
 }
-
 article.tweet .dateposted {
   font-size: 0.8em;
 }
-
 article.tweet .user-icon {
   padding-right: 15px;
 }
-
+article.tweet .small-pic {
+  width: 75px;
+  height: 75px;
+}
 article.tweet sup {
   padding-left: 2px;
   font-weight: 600;
+  z-index: 1;
 }
-
 article.tweet footer {
   display: flex;
   flex-direction: row;
@@ -50,13 +44,18 @@ article.tweet footer {
   padding-top: 10px;
   font-size: 0.75em;
 }
-
 article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+article.tweet header * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-article.tweet .heart {
-  color: #ff6f59;
+article.tweet:hover {
+  box-shadow: 5px 5px #254441;
 }
