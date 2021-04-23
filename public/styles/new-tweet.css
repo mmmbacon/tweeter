@@ -53,7 +53,7 @@
   border: none;
   background-color: #f6f6f3;
   resize: vertical;
-  height: 1em;
+  height: 1.2em;
   width: 100%;
 }
 .new-tweet #tweet-text:focus {

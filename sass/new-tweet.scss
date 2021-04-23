@@ -60,7 +60,7 @@
     border: none;
     background-color: theme.$offwhite1;
     resize: vertical;
-    height: 1em;
+    height: 1.2em;
     width: 100%;
   }
   
@@ -85,7 +85,6 @@
     opacity: 0;
   }
 }
-
 
 @media only screen and (min-width: 1024px) {
   .new-tweet.panel-hidden {
