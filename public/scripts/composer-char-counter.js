@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  //Updates the character counter for every character input to textfield
   $('#tweet-text').on('input', function() {
 
     const output = $(this).parent().parent().find('output');

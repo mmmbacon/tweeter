@@ -46,6 +46,7 @@ $(document).ready(function() {
     
   });
 
+  //Hide / show the floating button
   $(document).on('scroll', function(e) {
     if ($(window).scrollTop() > 0) {
       $('.floating-button').fadeIn();
@@ -55,6 +56,7 @@ $(document).ready(function() {
     
   });
 
+  //Returns to top of the page when clicked
   $('.floating-button').on('click', function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
@@ -67,6 +69,10 @@ $(document).ready(function() {
     $('.error').delay(3000).fadeOut(2000);
   };
   
+  /**
+   * @description Renders tweets to page
+   * @param {object} tweetData
+   */
   const renderTweets = function(tweetData) {
     $('#tweets-container').empty();
     // loops through tweets
@@ -76,6 +82,11 @@ $(document).ready(function() {
     }
   };
   
+  /**
+   * @description Creates an HTML formatted tweet component
+   * @param {object} tweet
+   * @returns {string} HTML formatted tweet
+   */
   const createTweetElement = function(tweet) {
 
     const date = timeago.format(new Date(tweet.created_at));
@@ -115,6 +126,9 @@ $(document).ready(function() {
     return $tweet;
   };
 
+  /**
+   * @description AJAX fetch tweets
+   */
   const loadTweets = function() {
     $.ajax('/tweets', { type: 'GET'})
       .then((result) => {
