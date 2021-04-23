@@ -18,7 +18,6 @@ nav {
   }
 
   .col {
-    display: flex;
     flex-direction: column;
   }
 
@@ -38,6 +37,9 @@ nav {
     color: theme.$green1;
     font-weight: 600;
     text-decoration: none;
+    border: none;
+    border-radius: 0px;
+    background-color: none;
   }
 
   a:hover {

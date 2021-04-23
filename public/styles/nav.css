@@ -15,7 +15,6 @@ nav .title {
   transform: rotate(-2deg);
 }
 nav .col {
-  display: flex;
   flex-direction: column;
 }
 nav .justify-content-center {
@@ -27,10 +26,13 @@ nav .flex {
 nav .text-center {
   text-align: center;
 }
-nav .new {
+nav .button {
   color: #254441;
   font-weight: 600;
   text-decoration: none;
+  border: none;
+  border-radius: 0px;
+  background-color: none;
 }
 nav a:hover {
   color: #254441;
