@@ -24,25 +24,29 @@ Go to <http://localhost:8080/> in your browser
 
 ## Page Examples
 
-![Landing Page](https://user-images.githubusercontent.com/8649801/116008380-74210100-a5d1-11eb-9dd8-2e7c7010765e.gif)
+| ![Landing Page](https://user-images.githubusercontent.com/8649801/116008380-74210100-a5d1-11eb-9dd8-2e7c7010765e.gif) |
+|:--:| 
+| *Landing Page* |
 
-*Landing Page*
+| ![Toggle Button Functionality](https://user-images.githubusercontent.com/8649801/116008517-396b9880-a5d2-11eb-96fc-da1d7db397a6.gif) |
+|:--:| 
+| *Toggle Button Functionality* |
 
-![Toggle Button Functionality](https://user-images.githubusercontent.com/8649801/116008517-396b9880-a5d2-11eb-96fc-da1d7db397a6.gif)
+| ![Character Limit Error](https://user-images.githubusercontent.com/8649801/116008545-628c2900-a5d2-11eb-8a8b-e46a9c550a01.gif) |
+|:--:| 
+| *Character Limit Error* |
 
-*Toggle Button Functionality*
+| ![Empty Field Error](https://user-images.githubusercontent.com/8649801/116008560-720b7200-a5d2-11eb-82bb-5078935b8a43.gif) |
+|:--:| 
+| *Empty Field Error* |
 
-![Character Limit Error](https://user-images.githubusercontent.com/8649801/116008545-628c2900-a5d2-11eb-8a8b-e46a9c550a01.gif)
+| ![Tweet Submission](https://user-images.githubusercontent.com/8649801/116008570-79328000-a5d2-11eb-92a5-cda6f10ba14e.gif) |
+|:--:| 
+| *Tweet Submission* |
 
-*Character Limit Error*
-
-![Empty Field Error](https://user-images.githubusercontent.com/8649801/116008560-720b7200-a5d2-11eb-82bb-5078935b8a43.gif)
-
-*Empty Field Error*
-
-![Tweet Submission](https://user-images.githubusercontent.com/8649801/116008570-79328000-a5d2-11eb-92a5-cda6f10ba14e.gif)
-
-*Tweet Submission*
+| ![Page Scroll Return](https://user-images.githubusercontent.com/8649801/116008826-c105d700-a5d3-11eb-91b8-a8e9aa266a25.gif) |
+|:--:| 
+| *Page Scroll Return Button* |
 
 
 
