@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone using NodeJS, Express, and SASS for styling. 
 
-This project is intended to showcase technical knowledge and use of these libraries for a single page application. It uses jQuery AJAX to fetch information from an in-memory database on the express server REST API endpoints. Page content is displayed and formatted with HTML, SASS and and jQuery.
+This project is intended to showcase technical knowledge and use of these libraries for a single page application. It uses jQuery AJAX to fetch information from an in-memory database on the express server REST API endpoints. Page content is displayed and formatted with HTML, SASS and and jQuery. Page design is responsive and uses media queries to determine content size and layout.
 
 ## Install It
 
