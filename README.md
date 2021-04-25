@@ -48,6 +48,9 @@ Go to <http://localhost:8080/> in your browser
 |:--:| 
 | *Page Scroll Return Button* |
 
+| ![Responsive](https://user-images.githubusercontent.com/8649801/116008975-3c678880-a5d4-11eb-9c4b-e2dfdf3e6bff.gif) |
+|:--:| 
+| *Responsive Web Design* |
 
 
 
